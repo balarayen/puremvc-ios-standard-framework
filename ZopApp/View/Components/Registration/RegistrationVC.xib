@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationVC">
+            <connections>
+                <outlet property="MobileNumberText" destination="yki-g2-9Rw" id="qEk-rt-xVk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZC3-W6-xrK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYI-wS-Afn">
+                    <rect key="frame" x="242" y="20" width="115.5" height="41.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="ZopApp">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="36" name="HelveticaNeue-UltraLight"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Mobile Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awB-yf-IaV">
+                    <rect key="frame" x="199.5" y="157.5" width="201" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yki-g2-9Rw">
+                    <rect key="frame" x="191" y="215" width="218" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="14l-fG-QRG"/>
+                        <constraint firstAttribute="width" constant="218" id="48W-ZS-onR"/>
+                        <constraint firstAttribute="width" secondItem="yki-g2-9Rw" secondAttribute="height" multiplier="109:15" id="hce-bH-XqR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hce-bH-XqR"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0k-Bl-xpW">
+                    <rect key="frame" x="266" y="331" width="69" height="30"/>
+                    <state key="normal" title="Send OTP"/>
+                    <connections>
+                        <action selector="sendOtpClicked:" destination="-1" eventType="touchUpInside" id="63s-4r-omc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yki-g2-9Rw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Xf-pt-w1i"/>
+                <constraint firstItem="HYI-wS-Afn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Tuo-71-riu"/>
+                <constraint firstItem="awB-yf-IaV" firstAttribute="top" secondItem="HYI-wS-Afn" secondAttribute="bottom" constant="96" id="dnA-Rf-VRi"/>
+                <constraint firstItem="HYI-wS-Afn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h75-Zc-MbA"/>
+                <constraint firstItem="o0k-Bl-xpW" firstAttribute="top" secondItem="yki-g2-9Rw" secondAttribute="bottom" constant="86" id="hqg-Bl-Qwz"/>
+                <constraint firstItem="o0k-Bl-xpW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kYQ-LV-cWE"/>
+                <constraint firstAttribute="bottom" secondItem="o0k-Bl-xpW" secondAttribute="bottom" constant="231" id="oXE-Xc-iVZ"/>
+                <constraint firstItem="awB-yf-IaV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qMb-m1-jfd"/>
+                <constraint firstItem="yki-g2-9Rw" firstAttribute="top" secondItem="awB-yf-IaV" secondAttribute="bottom" constant="37" id="qvj-mG-dll"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="oXE-Xc-iVZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="371" y="231"/>
+        </view>
+    </objects>
+</document>
