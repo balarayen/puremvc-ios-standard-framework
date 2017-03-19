@@ -868,7 +868,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Clementek Private Limited";
+				ORGANIZATIONNAME = "Balamurugan Souppourayen";
 				TargetAttributes = {
 					13C004051CAB91CE00B26516 = {
 						CreatedOnToolsVersion = 7.2.1;
