@@ -1,10 +1,10 @@
+// AppDelegate.m
+// ZopApp
+// 
+// Copyright (C) 2017, puremvc-ios-standrad-framework, Balamurugan Souppourayen
 //
-//  AppDelegate.m
-//  ZopApp
-//
-//  Created by BALAMURUGAN SOUPPOURAYEN on 30/03/16.
-//  Copyright © 2016 Clementek Private Limited. All rights reserved.
-//
+// This software may be modified and distributed under the terms
+// of the MIT license.  See the LICENSE file for details.
 
 #import "AppDelegate.h"
 #import "AppFacade.h"
